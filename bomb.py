@@ -45,7 +45,7 @@ for i in range(no_of_threads):
     threads.append(t)
 
 for i in range(no_of_sms):
-    q.put(Provider(target))
+    q.put(config(target))
 
 q.join()
 
